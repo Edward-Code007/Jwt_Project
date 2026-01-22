@@ -1,0 +1,7 @@
+# Compilación binaria
+bin/
+obj/
+
+# Archivos generados por herramientas
+TestResult*/
+build/
