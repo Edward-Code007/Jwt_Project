@@ -8,9 +8,10 @@ public class Program
     
     public static void Main(string[] args)
     {
-     
-     Console.WriteLine(Program.GenerateToken());
-     
+     string[] tokensplit = GenerateToken().Split(".");
+     Console.WriteLine("Header: " + tokensplit[0]);
+     Console.WriteLine("PayLoad: " + tokensplit[1]);
+     Console.WriteLine("Signature: " + tokensplit[2]);
     }
 
     public static string GenerateToken()
