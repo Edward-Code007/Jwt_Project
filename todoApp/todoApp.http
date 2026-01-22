@@ -1,0 +1,29 @@
+@todoApp_HostAddress = http://localhost:5201
+
+GET {{todoApp_HostAddress}}/listtodos/
+Accept:application/json
+
+###
+
+POST {{todoApp_HostAddress}}/addtodo/
+Content-Type:application/json
+
+{
+    "Description": "Call Moma"
+}
+
+###
+
+PATCH {{todoApp_HostAddress}}/editodo/019be6af-6bda-7c69-9af3-524bef8ebac2
+Content-Type:application/json
+
+{
+    "Description": "RunAway",
+}
+
+###
+
+PATCH {{todoApp_HostAddress}}/completetask/019be73d-c8c5-7ef7-a12f-7739f92ec905
+Content-Type:application/json
+
+###
